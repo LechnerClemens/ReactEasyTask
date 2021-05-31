@@ -1,13 +1,88 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Login {
+  
+  margin: auto;
+  width: 33%;
+  margin-top: 5em;
+  border: 1px solid grey;
+  border-radius: 1em;
+  height: 15em;
+  
+}
+.LoginText{
+  
+  width: 99%;
+  margin:auto;
+  margin-top: 0.1em;
+  border: 1px solid grey;
+  border-radius: 0.5em;
+  background-color: #333;
+  color:white;
+}
+.form *{
+  display:block;
+  margin:auto;
+}
+.btnSubmit{
+  margin-top:1em;
+  margin-bottom:1em;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #212529;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0.5em;
+}
+.input{
+  float:left;
+  clear:both;
+  padding-left: 0.5em;
+  margin-left: 1em;
+  width: 90%;
+  height: 2em;
+}
+.headerBar{
+  background-color: #333;
+  height: 3em;
+  
+}
+.btn{
+  
+  background-color: #333;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+}
+.pointer {cursor: pointer;}
+
