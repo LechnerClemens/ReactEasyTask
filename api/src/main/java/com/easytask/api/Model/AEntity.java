@@ -1,6 +1,7 @@
-package com.Model;
+package com.easytask.api.Model;
 
 import com.sun.istack.NotNull;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.io.Serializable;
 
 @MappedSuperclass
 public abstract class AEntity implements Serializable {
+    
     @Id
     @Getter
     @Setter
