@@ -85,4 +85,36 @@ code {
   
 }
 .pointer {cursor: pointer;}
+.margintop{
+  padding-top: 12em;
+  color:red;
+}
 
+.user{
+  padding-top:0.6em;
+  padding-right:2em;
+  color:white;
+  float:right;
+}
+.icon{
+  margin-top: 0.6em;
+  margin-right: 0.5em;
+  height: 1.5em;
+  width: 1.5em;
+  float:right;
+}
+.topheaderdiv{
+  background-color: #f2f2f2;
+}
+.headerbutton{
+  background-color: #595757;
+  border: 0.25em solid black;
+  height: 3.6em;
+  width: 7em;
+  float:left;
+  cursor: pointer;
+  border-radius: .3rem;
+}
+.marginleft{
+  margin-left: 3em;
+}
