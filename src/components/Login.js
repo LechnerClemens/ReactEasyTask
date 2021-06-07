@@ -30,3 +30,4 @@ const Login = ({user, submit, setPassword, setEmail, wrongUserOrPassword}) => {
 }
 
 export default Login
+

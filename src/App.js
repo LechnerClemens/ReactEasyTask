@@ -12,11 +12,13 @@ function App() {
   const[isLoggedIn, setisLoggedIn] = useState(false);
   const[isWrongUserOrPassword, setisWrongUserOrPassword] = useState(false);
   const[isSubmitted, setisSubmitted] = useState(false);
+  const[whichButtonPressed, setWhichButtonPressed] = useState("My Tasks");
 
   useEffect(()=>{
     checkLogin();
   },[loginUser, isSubmitted])
 
+  
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -36,11 +38,23 @@ function App() {
       setisWrongUserOrPassword(true);
     }  
   }
-
+  function handleLogout(e){
+    e.preventDefault();
+    setEmail("");
+    setPassword("");
+    setisSubmitted(false);
+    setisLoggedIn(false);
+    setLoginUser({});
+    setisWrongUserOrPassword(false);
+  }
+  function handleNewPage(e){
+    e.preventDefault();
+    setWhichButtonPressed(e.target.value);
+  }
 
   return (
     <div className="App">
-      <Header isLoggedIn={isLoggedIn} username={loginUser["firstname"]}/>
+      <Header isLoggedIn={isLoggedIn} username={loginUser["firstname"]} logout={handleLogout} whichButtonPressed={whichButtonPressed} handleNewPage={handleNewPage}/>
       {isLoggedIn === false ? <Login setEmail={setEmail} setPassword={setPassword} submit={handleSubmit} wrongUserOrPassword={isWrongUserOrPassword}/> : true}
     </div>
   );

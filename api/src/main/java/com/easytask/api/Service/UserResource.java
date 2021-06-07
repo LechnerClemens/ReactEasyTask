@@ -39,5 +39,4 @@ public class UserResource extends AResource<User, Long>{
         User result = userRepository.getLogin(email, password);
         return (User)Hibernate.unproxy(result);
     }
-    
 }

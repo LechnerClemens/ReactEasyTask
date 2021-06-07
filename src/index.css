@@ -92,7 +92,7 @@ code {
 
 .user{
   padding-top:0.6em;
-  padding-right:2em;
+  padding-right:4em;
   color:white;
   float:right;
 }
@@ -107,14 +107,31 @@ code {
   background-color: #f2f2f2;
 }
 .headerbutton{
-  background-color: #595757;
-  border: 0.25em solid black;
-  height: 3.6em;
-  width: 7em;
+  /*background-color: #595757;*/
+  margin-left: 0.1em;
+  background-color: #333;
+  color:white;
+  border: 0.2em solid black;
+  margin-top:0.3em;
+  height: 3em;
+  width: 9em;
   float:left;
   cursor: pointer;
   border-radius: .3rem;
 }
 .marginleft{
   margin-left: 3em;
+}
+.logoutbutton{
+  float:right;
+  color:white;
+  background-color: #333;
+  border:0.2em solid black;
+  margin-top: 0.9em;
+  width: 4em;
+  margin-right: -13em;
+  cursor: pointer;
+}
+.MyTasks{
+  background-color: #5e5c5c;
 }

@@ -35,6 +35,5 @@ public class User extends AEntity{
 
     @NotNull
     @Column(name = "PASSWORD", nullable = false)
-    private String password;
-    
+    private String password;  
 }
